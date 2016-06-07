@@ -1,0 +1,10 @@
+<section ng-controller="myCtrl">
+	<input type="text" ng-model="myModels" placeholder="Start typing..." />
+	<p>My data: {{ myModels }}</p>
+	<form ng-submit="myFunc()">
+		<input type="submit">
+	</form>
+	<ul>
+		<li ng-repeat="myModel in response">{{ myModel.data }}</li>
+	</ul>
+</section>
